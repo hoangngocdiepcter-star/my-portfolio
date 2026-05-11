@@ -1,0 +1,66 @@
+.portfolio-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* Styling cho bộ lọc */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 8px 25px;
+    border: 1.5px solid #6366f1;
+    background: transparent;
+    color: #6366f1;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #6366f1;
+    color: white;
+}
+
+/* Cấu trúc Grid 3 cột */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ép chia đúng 3 cột như ảnh */
+    gap: 25px;
+}
+
+.portfolio-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05); /* Hiệu ứng zoom nhẹ khi hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .portfolio-grid { grid-template-columns: 1fr; }
+    .portfolio-filters { flex-wrap: wrap; }
+}

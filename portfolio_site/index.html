@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diep Portfolio</title>
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/hero.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/skills.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Diep</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Hi, I'm <span class="highlight">Hoàng Ngọc Điệp</span></h1>
+            <p>Full-Stack Developer | UI Designer | Problem Solver</p>
+            <a href="#portfolio" class="cta-btn">View My Work</a>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container about-content">
+                <div class="about-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Hoàng Ngọc Điệp Profile">
+                </div>
+                
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate developer with 3+ years of experience building web applications that make a difference.</p>
+                    <p>Specialized in Frontend development with React and Vue. Also experienced in Backend with Node.js and Python. I believe in clean code, user-centered design, and continuous learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-label"><span>HTML5</span><span>50%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label"><span>CSS3</span><span>50%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label"><span>JavaScript</span><span>10%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 10%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label"><span>React</span><span>10%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 10%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="portfolio-title">My Portfolio</h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Web</button>
+                <button class="filter-btn">Mobile</button>
+                <button class="filter-btn">Design</button>
+            </div>
+    
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=1" alt="Project 1"></div>
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=2" alt="Project 2"></div>
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=3" alt="Project 3"></div>
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=4" alt="Project 4"></div>
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=5" alt="Project 5"></div>
+                <div class="portfolio-item"><img src="https://picsum.photos/400/300?random=6" alt="Project 6"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="contact-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out. I'm always open to discussing new projects.</p>
+                    <div class="info-details">
+                        <p><span>📧</span> hoangngocdiepcter.email@example.com</p> <p><span>📍</span> Hanoi, Vietnam</p> </div>
+                </div>
+    
+                <div class="contact-card">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Full Name</label> <input type="text" placeholder="John Doe" required> </div>
+                        <div class="form-group">
+                            <label>Email Address</label> <input type="email" placeholder="john@example.com" required> </div>
+                        <div class="form-group">
+                            <label>Message</label> <textarea placeholder="Tell me about your project..." rows="5" required></textarea> </div>
+                        <button type="submit" class="submit-btn">Send Message &rarr;</button> </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">DIEP</div>
+                <div class="footer-tagline">Building digital experiences</div>
+                <div class="social-links">
+                    <a href="#" class="social-icon">1</a> <a href="#" class="social-icon">2</a> <a href="#" class="social-icon">3</a> </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Diep . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

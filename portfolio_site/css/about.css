@@ -1,0 +1,27 @@
+.about-content {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between;
+    gap: 50px; /* Khoảng cách giữa ảnh và chữ */
+    flex-wrap: wrap; /* Tự động xuống dòng trên mobile */
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Làm ảnh hình tròn */
+    object-fit: cover;
+    border: 5px solid #2563eb; /* Viền xanh giống bản thiết kế */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1; /* Để phần chữ chiếm hết không gian còn lại */
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1f2937;
+}

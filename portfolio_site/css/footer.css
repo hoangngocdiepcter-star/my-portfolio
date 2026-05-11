@@ -1,0 +1,83 @@
+.footer {
+    background-color: #1f2937; /* Màu xanh đen đậm như mẫu */
+    color: #9ca3af;
+    padding: 60px 0 30px;
+}
+.footer .container {
+    max-width: 1100px; /* Hoặc kích thước container chung của bạn */
+    margin: 0 auto;    /* Căn giữa toàn bộ khối nội dung */
+    padding: 0 20px;   /* Tránh dính sát mép trên mobile */
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;       /* Đảm bảo chiếm hết chiều rộng container */
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+}
+
+/* Định dạng các icon tròn */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #374151; /* Màu nền icon */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background: #6366f1; /* Đổi sang màu tím khi hover */
+    transform: translateY(-3px);
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #374151;
+    margin-bottom: 30px;
+}
+
+.footer-bottom {
+    font-size: 0.8rem;
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+.social-icon {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Các thuộc tính cũ giữ nguyên */
+}
